@@ -8,11 +8,21 @@ pub struct InstantiateMsg {}
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
 #[serde(rename_all = "snake_case")]
 pub enum ExecuteMsg {
+    // CreateDenom {
+    //     subdenom: String,
+    //     initial_mint: Option<String>,
+    //     initial_pool: Option<InitPoolCfg>,
+    // },
+
     CreateDenom {
-        subdenom: String,
-        initial_mint: Option<String>,
-        initial_pool: Option<InitPoolCfg>,
-    },
+        owner: String,
+        name: String,
+        denom: String,
+        description: String, 
+        precision: i32, 
+        max_supply: i32, 
+        can_change_max_supply: bool,         
+    }
 }
 
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]

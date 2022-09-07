@@ -39,8 +39,8 @@ pub struct MsgCreateDenom {
     #[prost(int32, tag = "6")]
     pub max_supply: i32,
 
-    #[prost(int32, tag = "7")]
-    pub can_change_max_supply: i32,
+    #[prost(bool, tag = "7")]
+    pub can_change_max_supply: bool,
 }
 /// MsgCreateDenomResponse is the return value of MsgCreateDenom
 /// It returns the full string of the newly created denom
