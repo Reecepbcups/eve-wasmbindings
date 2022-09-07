@@ -1,0 +1,14 @@
+[submodule "dependencies/cosmos-sdk"]
+	path = dependencies/cosmos-sdk
+	url = https://github.com/cosmos/cosmos-sdk
+	branch = osmosis-main
+[submodule "dependencies/osmosis"]
+	path = dependencies/osmosis
+	url = https://github.com/osmosis-labs/osmosis
+	branch = main
+[submodule "dependencies/eve"]
+	path = dependencies/eve
+	url = https://github.com/notional-labs/eve
+[submodule "eve"]
+	path = eve
+	url = https://github.com/notional-labs/eve
